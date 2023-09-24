@@ -1,0 +1,394 @@
+body {
+    background: lightpink url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==") no-repeat fixed;
+  }
+  
+  .top {
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  
+  .top .logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid;
+  }
+  
+  #button1 {
+    width: 250px;
+    height: 50px;
+    color: black;
+    border-color: transparent;
+    background-color: #0077b6;
+    border-radius: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+  
+  
+  }
+  
+  #button2 {
+    width: 250px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: black;
+    border-color: transparent;
+    background-color: #0096c7;
+    border-radius: 12px;
+  }
+  
+  #button3 {
+    width: 250px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: black;
+    border-color: transparent;
+    background-color: #00b4d8;
+    border-radius: 12px;
+  }
+  
+  
+  #button4 {
+    width: 250px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: black;
+    border-color: transparent;
+    background-color: #48cae4;
+    border-radius: 12px;
+  }
+  
+  #button5 {
+    width: 250px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: black;
+    border-color: transparent;
+    background-color: #90e0ef;
+    border-radius: 12px;
+  }
+  
+  
+  
+  
+  #b {
+    padding: 30px;
+  }
+  
+  .text1 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 500px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px
+  }
+  
+  #img2 {
+  
+    float: left;
+    padding: 15px;
+  }
+  
+  #img3 {
+    float: right;
+    padding: 15px;
+  }
+  
+  #pd {
+    display: none;
+  }
+  
+  #pb {
+    display: none;
+  }
+  
+  #rem {
+    display: none;
+  }
+  
+  #pd {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 600px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px
+  }
+  
+  .buttons {
+    background-color: #131720;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    display: block;
+    height: 50px;
+    width: 200px;
+  
+  }
+  
+  #pb {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 600px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px
+  }
+  
+  #img4 {
+    float: right;
+    padding: 30px;
+    height: 300px;
+    width: 450px;
+  }
+  
+  #rem {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 1600px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  
+  #cause {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: fit-content;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+  
+  
+  }
+  
+  #cure01 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+  
+    display: none;
+    flex-direction: column;
+  
+  }
+  
+  #cure02 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+  
+    border-radius: 19px;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+  
+  }
+  
+  .rembuttons {
+    background-color: #131720;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    display: block;
+    height: 100px;
+    width: 400px;
+   
+  }
+  
+  #img5 {
+    float: right;
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  #os {
+    display: none;
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 600px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px
+  }
+  
+  
+  #sympos {
+    display: none;
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 600px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px
+  }
+  
+  .buttonspcos {
+    background-color: #131720;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    display: block;
+    height: 50px;
+    width: 200px;
+  }
+  
+  #rem2 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 700px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+  }
+  
+  #cure03 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+  
+    border-radius: 19px;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+  
+  }
+  
+  #cure04 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+  
+    border-radius: 19px;
+    padding: 30px;
+    display: none;
+  
+  }
+  
+  #cause2 {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+  
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .rembuttons2 {
+    background-color: #131720;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    display: block;
+    height: 100px;
+    width: 400px;
+  }
+  
+  #ques {
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 1100px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+  }
+  
+  #PCOD1,
+  #PCOD2,
+  #PCOD3,
+  #PCOD4,
+  #PCOS1,
+  #PCOS2,
+  #PCOS3,
+  #PCOS4 ,
+  #rem01,
+  #rem02,
+  #rem03,
+  #rem04{
+    border-color: transparent;
+    background-color: #a9def9;
+  
+    width: fit-content;
+  }
+  
+  #pd,
+  #rem,
+  #pb,
+  #ques,
+  #os,
+  #sympos,
+  #rem2 {
+  
+    display: none;
+    flex-direction: column;
+  
+    height: fit-content;
+  }
+  
+  
+  
+  
+  
+  #buttons,
+  #buttonspcos {
+  
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: space-evenly;
+  }
+  #ngos{
+    background-color: #131720;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    height: 3700px;
+    width: 1410px;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+  }

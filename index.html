@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SheVitality Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top">
+    <h1> <img src="WhatsApp Image 2023-09-21 at 5.22.05 PM.jpeg" alt="avatar" class="logo"> SheVitality Life &#174;
+    </h1>
+    <center><em>"Embrace the journey, your strength will prevail over PCOD/PCOS."</em></center>
+
+  </div>
+  <div id="b">
+    <center>
+      <button id="button1" onclick="pcod()">PCOD</button>
+      <button id="button2">PCOS</button>
+      <button id="button3">FAQs</button>
+      <button id="button4">HELPDESK</button>
+      <button id="button5">QnA</button>
+  </div>
+  </center>
+  <div class="text1">
+    <p id="text"> <img
+        src="data:image/jpeg;base64,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"
+        alt="avatar" id="img2"> Welcome to our platform, where we shed light on the intricate connection between modern lifestyles, heightened stress levels, and the rising incidence of Polycystic Ovary Syndrome (PCOS) and Polycystic Ovary Disorder (PCOD) among women. In today's fast-paced world, the burden of stress and anxiety can weigh heavily on women, impacting not just their mental well-being but also their physical health. 
+        <br> <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_n5czWCFhwWh4T8H-0tZxGVnGvK-nbSOYw&usqp=CAU"
+        alt="avatar" id="img3">It's imperative to understand how chronic stress disrupts hormonal balance, often triggering or exacerbating PCOD/PCOS—a condition that affects countless lives. Join us on a journey to unravel this crucial link, empowering women with knowledge and support to navigate their path to holistic health.
+    </p>
+
+  </div>
+
+  <br>
+
+  <div id="pd">
+    <div id="item">
+      <h1> WHAT IS PCOD?</h1>
+    </div>
+    <br>
+    <div id="item">
+      <p>PCOD full form in medical - Polycystic Ovarian Disease​<br>
+        PCOD is a medical condition in which the woman ovaries produce immature or partially mature eggs in large
+        numbers and over the time these become cysts in ovaries. Due to this ovaries become large and secrete large
+        amount of male hormones (androgens) causing infertility, irregular menstrual cycles, hair loss and abnormal
+        weight gain. PCOD can be controlled by diet and lifestyle modifications.​<br>
+        In this condition, the hormones of a woman go out of balance which creates various health issues. Ovaries
+        are the female reproductive organs responsible for the pregnancy. They produce hormones like progesterone
+        and estrogen that control the ovulation process that leads to pregnancy, and the relaxin hormone that
+        stretches the body's muscle during the ​
+        Pregnancy.<br> Besides, the ovaries are essential in maintaining women's menstrual cycle. Thus it affect a
+        women's menstrual cycle and overall health conditions.​</p>
+    </div>
+    <br>
+    <div id="item">
+      <div id="buttons">
+        <button id="PCOD1">SYMPTOMS</button>
+        <br>
+        <button id="PCOD2">CURE</button><br>
+        <button id="PCOD3">CAUSES</button><br>
+        <button id="PCOD4">HOME PAGE</button><br>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div id="pb">
+
+    <h2 style="font-family: 'Courier New', Courier, monospace;">SYMPTOMS OF PCOD</h2>
+    <br>
+    <p>
+
+      Some females start seeing symptoms around the time of their first period, some women only discover when they
+      have gained a lot of weight or trouble getting pregnant. The most common signs and symptoms of PCOD Problem in
+      females are:<br>
+      ​
+      ​
+    <ol>
+      <li>Irregular menstruation (Oligomenorrhea)</li><br>
+      <li>Skipped or absence of menstruation (Amenorrhea)</li><br>
+      <li>Heavy menstrual bleeding (Menorrhagia)</li><br>
+      <li>Excessive Hair growth (face, body - including on back, belly, and chest)</li><br>
+      <li>Acne (face, chest, and upper back)</li><br>
+      <li>Weight gain</li><br>
+      <li>Hair loss (hair on the scalp gets thinner and fall out)</li><br>
+      <li>Skin darkening (Neck, in the groin, and under the breasts)</li><br>
+    </ol>
+
+    </p>
+    <img src="https://lirp.cdn-website.com/69c0b277/dms3rep/multi/opt/Common+signs+and+symptoms+of+PCOS-640w.jpg"
+      alt="pic" id="img4">
+    ​
+  </div>
+  <br>
+  <div id="rem">
+    <div id="item">
+      <h2 style="font-family: 'Courier New', Courier, monospace;">HOW TO CURE PCOD NATURALLY</h2>
+    </div> <br>
+
+    <div id="item">
+      <p>
+        There are numerous methods to Treat PCOD Naturally. You can easily follow these at home without spending
+        much. ​
+        Exercise is the most useful and beneficial activity of the day. It avoids hormonal imbalance in our blood
+        and keeps heart problems and diabetes away. Not to mention it reduces stress, one of the causes of PCOD. ​
+        Weight loss has been proven to reduce the symptoms and risk of developing metabolic syndrome and
+        hormone-related disorders. Only 5% body fat reduction can significantly help relieve PCOD. ​
+        Diet change is recommended to avoid developing insulin resistance or diabetes due to PCOD. ​
+        Focus on wholesome foods as these do not contain preservatives, chemicals, hormones, and artificial sugars.
+        Add more fresh fruits, veggies, legumes, and whole grains to your diet while avoiding processed food
+        products.​
+        Make sure to have healthy portions of protein in your diet.​
+        Add anti-inflammatory foods to your diet, including green leafy vegetables, tomatoes, olive, tree nuts,
+        fatty fish, such as tuna and mackerel.​
+        Eat iron-rich foods, including broccoli, spinach, dates, and eggs.​
+        Magnesium-rich foods like bananas, spinach, almonds, and cashews are PCOS-friendly. Add these too.
+      </p>
+    </div>
+
+
+
+
+
+    <div class="rembuttons">
+      <button id="rem01">DIET</button>
+      <button id="rem02">EXERCISES</button>
+    </div>
+
+    <br>
+    <div id="cure01">
+      <h2 style="font-family: 'Courier New', Courier, monospace;">Diet to Treat PCOD:</h2>
+      <br>
+
+
+
+      ​<p>
+        While many lifestyle recommendations are suggested for those women suffering from PCOD, you are
+        encouraged to follow a PCOD DIET with low fat and carbohydrate content. This would prevent any sudden
+        upsurge in your blood sugar levels and help you keep a check on your weight. Foods that may be included
+        are​​<br>
+      <ol>
+        <li> Natural, unprocessed food</li>
+        <li>Spinach, kale and other leafy vegetables</li>
+        <li>Foods high in fiber.</li>
+        <li> Broccoli and cauliflower</li>
+        <li>Nuts and legumes</li>
+        <li>Fish</li>
+        <li>Whole grain</li>
+        <li>Low-fat dairy</li>
+      </ol>
+
+      </p>
+      ​
+    </div>
+
+    <br>
+    <div id="cure02">
+
+      <h2 style="font-family: 'Courier New', Courier, monospace;">What exercises are best for PCOD?</h2>
+
+
+
+      <p>​
+        If you are suffering from PCOD, then your first task is to reduce your Body Mass Index (BMI). Various
+        types of exercises that you could consider are</p> <br>
+      <ol>
+        <li>High-Intensity interval training (HIIT)</li>
+        <li>Cardiovascular workouts</li>
+        <li>Mind-body exercises</li>
+        <li>Strength training</li>
+        <li>Interval training</li>
+
+      </ol>
+
+      </p>
+      Exercising improve your brain health, help manage weight, reduce the risk of disease, strengthen bones
+      and muscles, and improve your ability to do everyday activities.​<br>
+      </p>
+    </div>
+
+  </div>
+  <br>
+  <div id="cause">
+    <h2 style="font-family: 'Courier New', Courier, monospace;">HOW PCOD IS CAUSED</h2>
+
+    <h4>STRESS AND ANXIETY :</h4>​<br>
+    PCOD usually happens due to excess androgen secretion. Furthermore, cortisol, or stress hormone, is accountable
+    for initiating the secretion of male hormones in the female body and is responsible for the following: Raising
+    insulin resistance. Weakening the immune system.​<br>
+    Family History:​<br>
+    There is a 50% possibility of getting PCOD among the women whose immediate female relatives suffer from PCOD. As
+    you grow older, this PCOD may lead to Type 2 diabetes, as PCOD is a risk factor for developing .​<br>
+    Insulin resistance & Lifestyle:​<br>
+    About 70% women with PCOD have peripheral insulin resistance. The pancreas produces insulin, which is a hormone
+    to help the body use sugar from foods for energy. Due to insulin resistance the cells can’t use insulin properly
+    and the body’s demand for insulin increases. To compensate, the pancreas makes more insulin.​<br>
+    Factors of Insulin Resistance:​<br>
+    Insulin resistance as a result of genetic factors​<br>
+    Insulin resistance as a result of being overweight (related to diet and inactivity)​<br>
+    A combination of both of these factors​​<br>
+    Inflammation:​​<br>
+    PCOD can lead to increased levels of inflammation in women. And being overweight also can contribute to
+    inflammation. Studies have shown in PCOD that excess inflammation is linked to higher androgen levels.​​<br>
+    Weight:​​<br>
+    Sometimes, a higher weight may worsen insulin resistance and the symptoms of polycystic ovarian syndrome. Some
+    women with PCOD report that they had never experienced symptoms such as menstrual irregularity or excessive hair
+    growth and are a healthy weight. However, these symptoms only appear once they gain weight.
+    ​
+  </div>
+
+  <br>
+
+  <div id="os">
+    <h1> WHAT IS PCOS?</h1>
+    <br>
+    <p>PCOS full form in medical - Polycystic ovary syndrome​
+      Polycystic ovarian syndrome (PCOS) is the most common hormonal disorder in females of reproductive age
+      .<br>If you have PCOS, you may not have period very often. Or you may have periods that last many days.
+      <br>You may also have too much of a hormone called androgen in your body.<br> With PCOS, many small sacs of
+      fluid develop along the outer edge of the ovary.<br> These are called cysts .The small fluid-filled cysts
+      contain immature eggs. These are called follicles.<br> The follicles fail to regularly release eggs.​<br>
+      It is characterized by two or more of the following: irregular menstrual periods, hyperandrogenism, and
+      polycystic ovaries.<br> This activity outlines the evaluation and treatment of polycystic ovarian syndrome
+      and reviews the role of the interprofessional team in managing patients with this condition. <br>Prolonged
+      inflammation is associated with high cortisol levels, which increases stress and depression​​
+    </p>
+    <br>
+    <div id="buttonspcos">
+      <button id="PCOS1">SYMPTOMS</button>
+      <button id="PCOS2">CURE</button>
+      <button id="PCOS3">CAUSES</button>
+      <button id="PCOS4">HOME PAGE</button>
+    </div>
+  </div>
+  <br>
+  <div id="sympos">
+
+    <h2 style="font-family: 'Courier New', Courier, monospace;">SYMPTOMS OF PCOS</h2>
+
+    <br>
+
+    Some women start seeing symptoms around the time of their first period. Others only discover they have PCOS
+    after they’ve gained a lot of weight or they’ve had trouble getting pregnant . The most common PCOS symptoms
+    are:​<br>
+
+    <ol>
+      <li>Many people with PCOS experience significant social anxiety, generalized anxiety, and panic attacks due to
+        physical manifestations of
+        PCOS</li>
+      <li>Ovaries that are large or have many cysts</li>
+      <li>Excess body hair, including the chest, stomach, and back (hirsutism)</li>
+      <li>Weight gain, especially around the belly (abdomen)</li>
+      <li>Acne or oily skin</li>
+      <li>Male-pattern baldness or thinning hair</li>
+      <li>Infertility</li>
+      <li>Small pieces of excess skin on the neck or armpits (skin tags) Dark or thick skin patches on the back of the
+        neck, in the armpits</li>
+      <li>Dark or thick skin patches on the back of the neck, in the armpits, and under the breasts</li>
+    </ol>
+
+
+    ​
+    <img
+      src="data:image/jpeg;base64,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"
+      id="img5">
+    ​
+  </div>
+  <br>
+
+  <div id="rem2">
+    <h2 style="font-family: 'Courier New', Courier, monospace;">HOW TO OVERCOME PCOS NATURALLY</h2>
+    <p>
+      <br>
+
+
+      PCOS is a complicated problem faced by women these days but it is not something that is untreatable, there
+      are available treatments for overcoming this disease effectively but along with that there are some
+      solutions that will help you increase the efficiency of your ongoing PCOS Treatment​<br><br>
+      ​
+      EXERCISE CAN HELP​​<br><br>
+      SLEEP ENOUGH​​<br><br>
+      TAKE PROPER MEDICATION​​<br><br>
+      MAINTAIN PROPER WEIGHT​​<br><br>
+      KEEP TRACK OF YOUR PERIODS​​<br><br>
+      AVOID SMOKING AND DRINKING​​<br><br>
+      DO NOT SKIP MEALS​​<br><br>
+      AVOID FOOD WITH HIGH SUGAR​​<br><br>
+      DO NOT SKIP DOCTOR’S APPOINTMENT​​<br><br>
+      DO NOT NEGLECT SYMPTOMS OF DEPRESSION
+      ​
+    </p>
+    <br>
+    <div class="rembuttons2">
+      <button id="rem03">DIET</button>
+      <button id="rem04">EXERCISES</button>
+    </div>
+    <div id="cure03">
+
+      <h2 style="font-family: 'Courier New', Courier, monospace;">Diet to Treat PCOS</h2>
+      <br>
+      ​<p>
+        Research shows that people with PCOS show evidence of all-over inflammation, which is associated with
+        heart disease and other illness. The Mediterranean diet eliminates saturated fats, processed meats and
+        refined sugar, which makes it a powerful tool to address inflammation<br>
+      </p>
+      ​
+
+      ​<ol>
+        <li>Omega 3-rich fish, such as salmon, baked or broiled</li>
+        <li>Olive oil instead of butter or margarine</li>
+        <li>Beans and other protein-rich legumes instead of meat​</li>
+        <li>Non-starchy vegetables</li>
+        <li>Whole grains</li>
+        <li>Whole fruit </li>
+        <li>Drink plenty of water, unsweetened coffee or tea. Instead of soda, try seltzer with a splash of fruit juice.
+        </li>
+        <li>Refined flour, white bread, rolls, pizza crust and pasta</li>
+        <li>Avoid Fried foods (French fries, potato chips, corn chips and fried chicken or fish)</li>
+        <li>Avoid Saturated fats such as butter or margarine</li>
+        <li>Avoid Red meat, including hamburgers, roast beef and steaks, processed luncheon meat and hot dogs</li>
+        <li>Avoid processed snacks: cakes, cookies, candy and pies</li>
+      </ol>
+
+
+      <br>
+
+      ​
+    </div>
+    
+    <div id="cure04">
+      <p> What exercises are best for PCOS? ​​​<br>
+        ​All of us need regular exercise because it has so many advantages, but people with PCOS need it even
+        more. Due to their insulin resistance, people with PCOS are more likely to become obese and develop
+        diabetes, and it can be challenging to reduce weight.​<br><br>
+        ​
+        Meditation​​<br><br>
+        Cardiovascular steady-state exercise​​<br><br>
+        Workouts that combine high-intensity exercise​​<br><br>
+        Strength training​​<br><br>
+        Walking​​<br><br>
+        Cardio​​<br><br>
+        Strength training​​<br><br>
+        Yoga​​<br><br>
+        Core Strength​​<br><br>
+
+      </p>
+    </div>
+
+    <br>
+
+
+  </div>
+  <br>
+  <div id="cause2">
+
+    <h2 style="font-family: 'Courier New', Courier, monospace;">HOW PCOS IS CAUSED</h2>
+    <p>
+      STRESS AND ANXIETY :<br><br>
+      PCOS usually happens due to excess androgen secretion. Furthermore, cortisol, or stress hormone, is accountable
+      for initiating the secretion of male hormones in the female body and is responsible for the following: Raising
+      insulin resistance. Weakening the immune system.​<br><br>
+      Family History:​<br><br>
+      There is a 50% possibility of getting PCOS among the women whose immediate female relatives suffer from PCOS. As
+      you grow older, this PCOS may lead to Type 2 diabetes, as PCOS is a risk factor for developing .​<br><br>
+      Insulin resistance & Lifestyle:​<br><br>
+      About 70% women with PCOS have peripheral insulin resistance. The pancreas produces insulin, which is a hormone
+      to help the body use sugar from foods for energy. Due to insulin resistance the cells can’t use insulin properly
+      and the body’s demand for insulin increases. To compensate, the pancreas makes more insulin.​<br><br>
+      Factors of Insulin Resistance:​<br><br>
+      Insulin resistance as a result of genetic factors​<br><br>
+      Insulin resistance as a result of being overweight (related to diet and inactivity)​<br><br>
+      A combination of both of these factors​​<br><br>
+      Inflammation:​​<br><br>
+      PCOS can lead to increased levels of inflammation in women. And being overweight also can contribute to
+      inflammation. Studies have shown in PCOS that excess inflammation is linked to higher androgen levels.​​<br><br>
+      Weight:​​<br><br>
+      Sometimes, a higher weight may worsen insulin resistance and the symptoms of polycystic ovarian syndrome. Some
+      women with PCOS report that they had never experienced symptoms such as menstrual irregularity or excessive hair
+      growth and are a healthy weight. However, these symptoms only appear once they gain weight.
+    </p>
+    ​
+  </div>
+
+  <br>
+
+  <div id="ques">
+
+    <h2 style="font-family: 'Courier New', Courier, monospace">FAQs</h2>
+
+
+    <br>
+
+    <p>
+
+      1.) Who can get PCOS?​<br><br>
+      ​
+      Ans: PCOS normally affects women once they start having menstrual cycles or hit the age of puberty (typically
+      around age 14).​<br><br>
+      3). Can PCOS affect your chances of getting pregnant?​​<br><br>
+      ​
+      Ans. It might. Because it is a hormonal imbalance, it can hamper normal ovulation and cause female infertility
+      as well as sub-fertility.​​<br><br>
+      ​
+      4). Is there a cure for PCOS?​​<br><br>
+      ​
+      Ans. No, there isn’t. It can be managed with the appropriate treatment at a fertility clinic in Denver depending
+      on symptoms, but not cured. Weight loss may help improve the symptoms in a lot of women with PCOS.​​<br><br>
+      ​
+      5). If a woman is overweight, will losing that excess weight help her to become pregnant?​​<br><br>
+      ​
+      Ans. It may, but there is no guarantee that it will. It is possible that weight loss could help in reducing
+      insulin resistance, which could result in ovulation or improved ovulation. This would help in conception. Losing
+      10% of your body weight could be enough to improve symptoms.​​<br>
+      6). Is PCOS/PCOD always be treated with hormonal treatment?​​<br><br>
+      ​
+      ANS). Not always. Most of them can be managed very well with only healthy changes in the lifestyle. A few would
+      need medications either in form of hormones or non Hormones. This decision your doctor will take after running
+      some specific tests on you and then balancing the pros and cons​​<br><br>
+      ​
+      7). How does one cure PCOS, PCOD?​​<br><br>
+      ​
+      ANS).PCOS or PCOD is a condition…it’s not a disease. It’s a tendency. Which means that it might not have a cure
+      but can be very well controlled; earlier the better. It's like Jack in the box. Keep a tight lid on it, it will
+      not trouble you at all. Leave the lid loose it will spring up and start bothering you. So don’t just label
+      yourself as a PCOS. Know about it; learn how to get a control over it and thus enjoy an optimum healthy
+      life.​​<br><br>
+      8). How can I fix PCOS/PCOD naturally, and PCOS Starts at What Age? ​​<br><br>
+      ​
+      Ans). Incorporating natural strategies can be an effective way to mitigate the symptoms of PCOS and improve
+      overall health. Some natural remedies to consider include maintaining a healthy body weight, consuming a
+      balanced diet rich in whole foods, practicing stress reduction techniques, and engaging in regular exercise.
+      ​​<br><br>
+      ​
+      9). What is the best time for a blood test for PCOS?​​<br><br>
+      ​
+      There are various tests conducted to get a diagnoses of PCOS Tests include a pelvic examination and ultrasound
+      which is ideally done at the end of the period. There are a number of blood tests which are required to assess
+      PCOS. A complete blood count, thyroid profile, testosterone count are tested for diagnosis. These tests are
+      conducted either before or after menstruation for exact results.​​<br><br>
+    </p><br>
+
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​
+    ​​
+    ​
+
+  </div>
+  <br>
+
+
+
+  </div>
+  <div id="ngos">
+<h2 style="font-family: 'Courier New', Courier, monospace">NGO'S SUPPORT:​</h2>
+<br>
+1). DOCTORS FOR YOU ​​​<br><br>
+​
+Doctors for You (DFY) was founded in 2007 by doctors, medical students and like-minded people with a vision of “health for all”. Currently, DFY is working on various projects in 17 different states across India involving healthcare professionals, disaster management practitioners, social workers, etc. Their major focus is to address the healthcare and nutritional needs of the affected population. They also work to improve sexual and reproductive health, maternal, infant and child health in emergencies and have vast experience working in disaster-prone areas.​
+Email Id - info@doctorsforyou.org​
+Link To Website- https://doctorsforyou.org​
+Contact Number-8267967249​​​<br><br>
+​
+2).Swasth Foundation​​​<br><br>
+​
+Established in 2009 with the vision of "Health and Joy for All",  SWASTH is on a mission to build a sustainable and accountable health ecosystem. The Organizations are focused on enhancing the state of the physical, social, mental and emotional well-being of people. This is done through interventions like courses, classes, workshops and one-on-one interactions. ​
+Link to the website- https://www.swasth.org/​
+Email Id-info@swasth.org​
+​​​<br><br>
+​3). CHETNA:​​​<br><br>
+This organization is managed by a women-led core management team, governed by a governing council and comprises a team that has academic and research experts in the field of health, nutrition of women, children and young people, education, communication, and gender.​
+Link To The Website:  https://www.chetnaindia.org​
+Email Id: chetna@chetnaindia.org​
+Contact number- 079-27559976 ​
+​​​<br><br>
+4). SNEHA​​​<br><br>
+Health Equity amongst the urban poor can be a powerful agent of change. Similar  to health being critical to a child's development, health equity is an indispensable milestone of a community's development. This can be achieved by strengthening the community's capacity to access public health services. SNEHA (Society for Nutrition, Education and Health Action) is a step towards bridging the health equity gap and going beyond fighting illness to Raising Health For All.​
+A continuum of care RMNCH+A (Reproductive, Maternal, Newborn, Child and Adolescent Health) means working with women and children from birth to adulthood in order  to break the intergenerational cycle of poor health.​
+Link to the Website- https://snehamumbai.org​
+Contact number- 9920199188​
+Email Id- communications@snehamumbai.org​
+​​​<br><br>
+​5) MOTHER CONCERN​​​<br><br>
+Mother Concern is a Registered NGOs that is supporting women and girls in their welfare. Living Healthy in the 21st century is an uphill task. With the combination of a hectic lifestyle and junk food, people’s health is affected. Through a healthy lifestyle, you can achieve your goal. One has  to follow a proper routine, a bit of self-control, and some discipline. Those who can do all these things can stay healthy and promote health and fitness.​
+Email Id- info@motherconcern.org​
+Contact number- +(91) 11-26264867​
+​​​<br><br>
+6). SAMA ​​​<br><br>
+Sama Resource Group for Women and Health is organizing a talk titled ‘Working hope: How ASHAs mediate between their communities and the health system’ . This organization works for Women's Health and their betterment. This ensure every voice to be heard by them . This organization provide health tips ​
+phone number- 011-40666255​
+Email Id- sama.womenshealth@gmail.com​
+​
+ feedback@motherconcern.org eedback@motherconcern.or
+​​​<br><br>
+<h1 style="font-family: 'Courier New', Courier, monospace" >​WEBSITE LINKS TO REFER: ​</h1>
+​<br>
+1). Ding DC, Chen W, Wang JH, Lin SZ. Association between polycystic ovarian syndrome and endometrial, ovarian, and breast cancer: A population-based cohort study in Taiwan. Medicine (Baltimore). 2018 Sep;97(39):e12608. [PMC free article] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6181615/" >[PubMed]</a>​​​<br><br>
+​
+2. Zhang C, Ma J, Wang W, Sun Y, Sun K. Lysyl oxidase blockade ameliorates anovulation in polycystic ovary syndrome. Hum Reprod. 2018 Nov 01;33(11):2096-2106. <a href="https://pubmed.ncbi.nlm.nih.gov/30272163/">[PubMed]</a>​​​<br><br>
+​
+3. Norman RJ, Teede HJ. A new evidence-based guideline for assessment and management of polycystic ovary syndrome. Med J Aust. 2018 Sep 01;209(7):299-300. <a href="https://pubmed.ncbi.nlm.nih.gov/30257632/">[PubMed]</a>​​​<br><br>
+​
+4. Goyal A, Ganie MA. Idiopathic Hyperprolactinemia Presenting as Polycystic Ovary Syndrome in Identical Twin Sisters: A Case Report and Literature Review. Cureus. 2018 Jul 19;10(7):e3004. [PMC free article] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6145756/">[PubMed]</a>​
+​​​<br><br>
+5.  Albu D, Albu A. The relationship between anti-Müllerian hormone serum level and body mass index in a large cohort of infertile patients. Endocrine. 2019 Jan;63(1):157-163.<a href="https://pubmed.ncbi.nlm.nih.gov/30238328/">[PubMed]</a>​
+​​​<br><br>
+6. Spinedi E, Cardinali DP. The Polycystic Ovary Syndrome and the Metabolic Syndrome: A Possible Chronobiotic-Cytoprotective Adjuvant Therapy. Int J Endocrinol. 2018;2018:1349868. [PMC free article] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6083563/">[PubMed]</a>​​​<br><br>
+​
+​7. Puttabyatappa M, Padmanabhan V. Ovarian and Extra-Ovarian Mediators in the Development of Polycystic Ovary Syndrome. J Mol Endocrinol. 2018 Oct 16;61(4):R161-R184. [PMC free article] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6088762/">[PubMed]</a>​
+​​​<br><br>
+8. Hallajzadeh J, Khoramdad M, Karamzad N, Almasi-Hashiani A, Janati A, Ayubi E, Pakzad R, Sullman MJM, Safiri S. Metabolic syndrome and its components among women with polycystic ovary syndrome: a systematic review and meta-analysis. J Cardiovasc Thorac Res. 2018;10(2):56-69. [PMC free article] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6088762/">[PubMed]</a>​​
+​​​<br><br>
+9. Maya ET, Guure CB, Adanu RMK, Sarfo B, Ntumy M, Bonney EY, Lizneva D, Walker W, Azziz R. Why we need epidemiologic studies of polycystic ovary syndrome in Africa. Int J Gynaecol Obstet. 2018 Nov;143(2):251-254. <a href="https://pubmed.ncbi.nlm.nih.gov/30092610/">[PubMed]</a>​​​​<br><br>
+10. Carvalho LML, Dos Reis FM, Candido AL, Nunes FFC, Ferreira CN, Gomes KB. Polycystic Ovary Syndrome as a systemic disease with multiple molecular pathways: a narrative review. Endocr Regul. 2018 Oct 01;52(4):208-221. <a href="https://pubmed.ncbi.nlm.nih.gov/31517612/">[PubMed]</a>​​​​<br><br>
+​​
+​
+​
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
